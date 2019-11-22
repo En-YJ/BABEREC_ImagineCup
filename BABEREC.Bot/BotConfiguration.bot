@@ -1,0 +1,18 @@
+{
+    "name": "BotConfiguration.bot",
+    "description": "",
+    "services": [
+        {
+            "type": "endpoint",
+            "appId": "907ec803-139b-4cca-b5c8-8d80ce620fb0",
+            "appPassword": "/H=t3fQ2r0x@g:8JAR0YFZQ:vU1o4iPk",
+            "endpoint": "http://localhost:3978/api/messages",
+            "id": "604ed190-0cba-11ea-ba54-cd9af4ad139c",
+            "name": "http://localhost:3978/api/messages"
+        }
+    ],
+    "padlock": "",
+    "version": "2.0",
+    "overrides": null,
+    "path": "C:\\Users\\YJ KIM\\source\\repos\\BABEREC_ImagineCup\\BABEREC.Bot\\BotConfiguration.bot"
+}

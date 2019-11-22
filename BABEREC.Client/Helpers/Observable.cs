@@ -4,7 +4,7 @@ using System.Runtime.CompilerServices;
 
 namespace BABEREC.Client.Helpers
 {
-    public class Observable : INotifyPropertyChanged
+    public class BindableBase : INotifyPropertyChanged
     {
         public event PropertyChangedEventHandler PropertyChanged;
 

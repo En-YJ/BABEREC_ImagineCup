@@ -15,7 +15,19 @@ namespace BABEREC.Bot.Bots
     {
         protected override async Task OnMessageActivityAsync(ITurnContext<IMessageActivity> turnContext, CancellationToken cancellationToken)
         {
-            await turnContext.SendActivityAsync(CreateActivityWithTextAndSpeak($"Echo: {turnContext.Activity.Text}"), cancellationToken);
+            //await turnContext.SendActivityAsync(CreateActivityWithTextAndSpeak($"Echo: {turnContext.Activity.Text}"), cancellationToken);
+
+            string responseMessage;
+            switch (turnContext.Activity.Text.ToLower())
+            {
+                case "start":
+                    responseMessage = "Start conversation";
+                    break;
+                default:
+                    responseMessage = "Unknown message";
+                    break;
+            }
+            await turnContext.SendActivityAsync(responseMessage);
         }
 
         protected override async Task OnMembersAddedAsync(IList<ChannelAccount> membersAdded, ITurnContext<IConversationUpdateActivity> turnContext, CancellationToken cancellationToken)
